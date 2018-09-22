@@ -4,9 +4,19 @@ MKSQUASHFS="mksquashfs"
 BUILD="build"
 PNDNAME="pandora.dosbox.thred"
 
-mkdir $BUILD
+if [ ! -d $BUILD ]; then
+    mkdir $BUILD
+fi
+
 cp -r src/* $BUILD
-cp dosbox/dosbox $BUILD
+
+if [ ! -f src/dosbox ]; then
+    echo "src/dosbox binary is missing!"
+    exit -1
+fi
+
+rm $PNDNAME.iso
+rm $PNDNAME.pnd
 
 $MKSQUASHFS $BUILD $PNDNAME.iso -all-root -force-gid 0 -comp xz -Xbcj arm,armthumb
 

@@ -2,14 +2,25 @@
 <PXML xmlns="http://openpandora.org/namespaces/PXML" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="PXML_schema.xsd">
   <application id="pandora.dosbox.thred">
     <title lang="en_US">DOSBox</title>
-    <exec command="rundosbox.sh"/>
+
+    <exec command="launch.sh"/>
+
     <description lang="en_US">The DOS PC emulator.</description>
+
     <info name="Pandora DOSBox Setup" type="txt/html" src="readme.txt"/>
+
     <previewpics>
-      <pic src="preview.png"/>
+      <pic src="dosbox_000.png"/>
+      <pic src="dosbox_001.png"/>
+      <pic src="dosbox_002.png"/>
+      <pic src="dosbox_003.png"/>
+      <pic src="dosbox_004.png"/>
     </previewpics>
-    <author name="DOSBox Team and thred" website="http://www.dosbox.com"/>
-    <version major="0" minor="74" release="0" build="1"/>
+
+    <author name="DOSBox Team" website="http://www.dosbox.com"/>
+
+    <version major="0" minor="74" release="2" build="0"/>
+
     <categories>
       <category name="Game">
         <subcategory name="Emulator"/>

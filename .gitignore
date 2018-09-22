@@ -1,5 +1,5 @@
 appdata/
-dosbox/
+src/dosbox
 build/
 pandora.dosbox.thred.iso pandora.dosbox.thred.pnd
 test/
